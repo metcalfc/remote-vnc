@@ -17,11 +17,14 @@
 	"forwardPorts": [6080, 5901],
 	"portsAttributes": {
 	  "6080": {
-		"label": "desktop"
+		"label": "desktop",
+		"onAutoForward": "openBrowser"
 	  }
 	},
 
 	// increase the size of the shared memory space allocated to your container
 	// for x/vnc
-	"runArgs": ["--shm-size=1g"]
+	"runArgs": ["--shm-size=1g"],
+
+	"postCreateCommand": "./setup.sh"
 }
