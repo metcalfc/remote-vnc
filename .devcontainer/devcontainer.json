@@ -27,5 +27,5 @@
 	"runArgs": ["--shm-size=1g"],
 
 	"postCreateCommand": "./setup.sh",
-	"postAttachCommand": "nohup bash -c 'sense_emu_gui &'"
+	"postAttachCommand": "nohup bash -c '/usr/bin/sense_emu_gui &'"
 }
