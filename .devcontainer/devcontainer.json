@@ -26,5 +26,6 @@
 	// for x/vnc
 	"runArgs": ["--shm-size=1g"],
 
-	"postCreateCommand": "./setup.sh"
+	"postCreateCommand": "./setup.sh",
+	"postAttachCommand": "nohup bash -c 'sense_emu_gui &'"
 }
